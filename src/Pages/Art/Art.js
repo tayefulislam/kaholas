@@ -1,6 +1,29 @@
 import React from 'react';
+import { useQuery } from 'react-query';
+import Loading from '../Loading/Loading';
+
 
 const Art = () => {
+
+    const { isLoading, data } = useQuery('arts', () =>
+        fetch('data.json').then(res =>
+            res.json()
+        )
+    )
+
+
+    if (isLoading) {
+        return <Loading></Loading>
+    }
+
+
+
+    console.log(data)
+
+
+
+
+
     return (
         <div>
 
