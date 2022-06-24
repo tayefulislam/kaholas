@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import Art from './Pages/Art/Art';
+import Arts from './Pages/Arts/Arts';
+
 
 function App() {
   return (
     <div>
 
-      <Art></Art>
+      <Arts></Arts>
+
+
 
     </div>
   );
