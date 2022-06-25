@@ -23,7 +23,7 @@ const Arts = () => {
 
 
     return (
-        <div>
+        <div className='mx-4'>
 
             {
                 data.map((art, index) => <Art
