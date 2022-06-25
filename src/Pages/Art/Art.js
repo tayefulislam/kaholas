@@ -7,14 +7,14 @@ const Art = ({ art }) => {
 
 
     return (
-        <div>
+        <div className='my-4'>
 
             {/* heading part */}
 
             <div>
 
                 <h1 className='text-5xl font-bold '>{art.headTitle}</h1>
-                <p className='text-xl text-[#808080] mt-1'>{art?.smallTitle} <i class="fa-solid fa-circle-question"></i></p>
+                <p className='text-xl text-[#808080] mt-1'>{art?.smallTitle} <i className="fa-solid fa-circle-question"></i></p>
 
             </div>
 
@@ -46,9 +46,9 @@ const Art = ({ art }) => {
 
                     <img src={art?.image1} alt="" />
 
-                    <div className='grid grid-cols-1 gap-1'>
+                    <div className=''>
 
-                        <img src={art?.image2} alt="" />
+                        <img className='mb-1' src={art?.image2} alt="" />
 
                         <img src={art?.image3} alt="" />
                     </div>

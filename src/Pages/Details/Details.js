@@ -12,8 +12,8 @@ const Details = ({ art }) => {
             <p className='text-xl font-semibold'>{art?.detail}</p>
 
             <div className='flex items-center my-3'>
-                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                    <div class="w-10 rounded-full">
+                <label tabindex="0" className="btn btn-ghost btn-circle avatar">
+                    <div className="w-10 rounded-full">
                         <img src="https://api.lorem.space/image/face?hash=33791" />
                     </div>
                 </label>
@@ -26,12 +26,12 @@ const Details = ({ art }) => {
 
             <div className='flex items-center my-3'>
 
-                <div class="rating rating-md">
-                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
-                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                <div className="rating rating-md">
+                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" checked />
                 </div>
 
                 <p className='ml-1 text-[#918e8e]'>{art?.totalReviewTeacher} total review for this teacher</p>
@@ -43,12 +43,12 @@ const Details = ({ art }) => {
                 {/* completed rating  */}
 
 
-                <div class="rating rating-md">
-                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" defaultChecked={classRating === 1} />
-                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" defaultChecked={classRating === 2} />
-                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" defaultChecked={classRating === 3} />
-                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" defaultChecked={classRating === 4} />
-                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" defaultChecked={classRating === 5} />
+                <div className="rating rating-md">
+                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" defaultChecked={classRating === 1} />
+                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" defaultChecked={classRating === 2} />
+                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" defaultChecked={classRating === 3} />
+                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" defaultChecked={classRating === 4} />
+                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" defaultChecked={classRating === 5} />
                 </div>
 
                 <p className='ml-1 text-[#918e8e]'>{art?.completedLearner} review for this class</p>
@@ -64,7 +64,7 @@ const Details = ({ art }) => {
                 {/* there button section */}
 
                 <button className='btn bg-[#503DD4] rounded-full border-0 hover:bg-[#503DD4]'>
-                    <span>See Class Schedule</span>
+                    <span>See Class Schedule <i className="fa-solid fa-circle-right mx-1"></i></span>
                 </button>
 
 
@@ -73,12 +73,12 @@ const Details = ({ art }) => {
                     <button className='btn text-[#503DD4] rounded-full border-0 bg-base-100 hover:bg-base-100 text-xl'>
 
 
-                        <i class="fa-regular fa-heart mx-1"></i>  Save
+                        <i className="fa-regular fa-heart mx-1"></i>  Save
                     </button>
 
                     <button className='btn text-[#503DD4] rounded-full border-0 bg-base-100 hover:bg-base-100 text-xl'>
 
-                        <i class="fa-solid fa-share mx-1"></i>
+                        <i className="fa-solid fa-share mx-1"></i>
                         Share
                     </button>
 
